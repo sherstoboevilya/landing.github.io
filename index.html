@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Agency landing page</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header-navigation-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-expand-lg navbar-dark nav-bar" style="background: #333333">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbar1">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item active">
+									<a class="nav-link upper-text" href="#">Home </a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link upper-text" href="#">Portfolio</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link upper-text" href="#">About Us</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link upper-text" href="#">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div id="organization">
+				<div class="row justify-content-between">
+					<div class="col-md-5">
+						<p class="big-text upper-text">our strong organization</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga ea fugit dolore nobis necessitatibus consequatur qui quibusdam eaque velit tenetur, ipsum, praesentium similique, nam ad libero incidunt saepe natus.</p>
+						<button class="button-Connection">Contact Us</button>
+					</div>
+					<div class="col-md-5">
+						<video width="100%" height="300px" controls="controls">
+							<source src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							</video>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div  class="container">
+			<div id="services">
+				<div class="row justify-content-between">
+					<div class=" col-md-5">
+						<p class="big-text head-text-services upper-text">do you know we can provide for you ?</p>
+						<p id="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum fuga ea fugit dolore nobis necessitatibus consequatur qui quibusdam eaque velit tenetur, ipsum, praesentium similique, nam ad libero incidunt saepe natus.</p>
+						<button id="learn-more-button">Learn More</button>
+					</div>
+					<div id="service" class="col-md-6">
+						<div class="row">
+							<div class="col">
+								<img src="img/management.png" alt="">
+								<p class="text-logo service-text-head">Management</p>
+								<p class="service-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis velit aperiam est nisi praesentium, sed voluptatibus </p>
+							</div>
+							<div class="col">
+								<img src="img/Pancil.png" alt="">
+								<p class="text-logo service-text-head">UI /UX Design</p>
+								<p class="service-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores asperiores voluptas nostrum animi soluta modi corporis</p>
+							</div>
+							<div class="w-100"></div>
+							<div class="col">
+								<img src="img/Diamond.png" alt="">
+								<p class="text-logo service-text-head">Logo / Branding</p>
+								<p class="service-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque vitae ipsam alias voluptates dignissimos, necessitatibus </p>
+							</div>
+							<div class="col">
+								<img src="img/Truck.png" alt="">
+								<p class="text-logo service-text-head">Animation</p>
+								<p class="service-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eligendi voluptatibus facilis, esse aperiam, commodi </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="feature-products">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p align="center" class="upper-text headline">Feature products</p>
+					</div>
+
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<p align="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum aut iure dignissimos obcaecati</p>
+						<hr class="under-line">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12" id="href-products">
+							<p class="upper-text cursor" onclick="hideBlock('all')">all</p>
+							<p class="upper-text cursor" onclick="hideBlock('print-template')">print template</p>
+							<p class="upper-text cursor" onclick="hideBlock('web-template')">web template</p>
+							<p class="upper-text cursor" onclick="hideBlock('user-interfase')">user interfase</p>
+							<p class="upper-text cursor" onclick="hideBlock('mock-up')">mock up</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 all print-template" id="app-3">
+						<div class="feature-block" v-if="seen">print template</div>
+					</div>
+					<div class="col-md-3 col-sm-6 all print-template">
+						<div class="feature-block">print template</div>
+					</div>
+					<div class="col-md-3 col-sm-6 all web-template">
+						<div class="feature-block">web template</div>
+					</div>
+					<div class="col-md-3 col-sm-6 all web-template">
+						<div class="feature-block">web template</div>
+					</div>
+					<div class="col-md-3 col-sm-6 all user-interfase">
+						<div class="feature-block">user interfase</div>
+					</div>
+					<div class="col-md-3 col-sm-6 all user-interfase">
+						<div class="feature-block">user interfase</div>
+					</div>
+					<div class="col-md-3 col-sm-6 all mock-up">
+						<div class="feature-block">mock up</div>
+					</div>
+					<div class="col-md-3 col-sm-6 all mock-up">
+						<div class="feature-block">mock up</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="our-team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="upper-text headline">meet our team</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quod laudantium </p>
+						<hr class="under-line">
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-12">
+						<div class="long-block"></div>
+					</div>
+					<div class="col-md-9">
+						<p class="upper-text" id="name">Mark Waugh</p>
+						<div class="row">
+							<div class="col-md-9">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quo, blanditiis in veritatis sequi, soluta odit vero totam aut, nihil adipisci placeat! Odit ea ipsam commodi, voluptate quia voluptatum est.</p>
+								<p style="font-weight: bold">Facebook Dribble Begance Twitter</p>
+							</div>
+						</div>
+						<div class="row our-image">
+							<div class="col-md-3 col-sm-4">
+								<div class="image-block" id="exe">
+									<img src="" class="Avatar">
+									<div id="under-image"><p>name fam</p></div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-4">
+								<div class="image-block" id="exe">
+									<img src="" class="Avatar">
+									<div id="under-image"><p>name fam</p></div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-4">
+								<div class="image-block" id="exe">
+									<img src="" class="Avatar">
+									<div id="under-image"><p>name fam</p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<div id="email-subscribe">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="text-subscribe" align="center">Design tips, tricks, and freebies. Delivered weekly.</p>
+						<p align="center">Lorem ipsum dolor sit amet, consectetur adipisicing  </p>
+						<div id="subscribe-position">
+							<input type="text" placeholder="Email Address...">
+							<button id="email-button" class=" button-Connection upper-text">subscribe</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="send-message">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<p class="big-text upper-text">get in touch</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias, architecto repellendus veritatis, tenetur at quod asperiores et corporis, aut cupiditate cumque enim sapiente alias minus inventore numquam? </p>
+						<hr class="under-line" >
+					</div>
+				</div>
+				<div class="row justify-content-between">
+					<div class="col-md-7">
+						<div class="row" id="message-form">
+							<div class="col-md-6">
+								<input type="text" class="input-name" placeholder="name">
+							</div>
+							<div class="col-md-6">
+								<input type="text" class="input-name" placeholder="Your Name">
+							</div>
+							<div class="col-md-12">
+								<textarea placeholder="Type your message"  id="input-mail"></textarea>
+							</div>
+							<div class="col-md-12">
+								<button class="button-Connection upper-text">send message</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4" id="contact-form">
+							<p class="big-text contacts-text" style="font-size: 18px">Contact info</p>
+							<p class="contacts-text">Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</p>
+							<p class="contacts-text">redwan@deviserweb.com</p>
+							<p class="contacts-text">(+88) 017 617 46373</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container full-hight">
+				<div class="row full-hight">
+					<div class="col-md-6 horizontal-center">
+						© Copyright @Junaed 2016, All rights reserved.
+					</div>
+					<div class="col-md-6 horizontal-center d-flex justify-content-between" align="right">
+						<ul>
+							<li><a href=""><img src="./img/tw.png" alt=""></a></li>
+							<li><a href=""><img src="./img/in.png" alt=""></a></li>
+							<li><a href=""><img src="./img/gm.png" alt=""></a></li>
+							<li><a href=""><img src="./img/fb.png" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="js/hideBlock.js"></script>
+		<script src="js/script.js"></script>
+
+	</body>
+	</html>
